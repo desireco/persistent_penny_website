@@ -14,9 +14,12 @@
     margin: auto !important;
 }
 .modal-card-title {
+    margin-bottom: 20px;
 }
 
-
+#cancel_button {
+    background-color: #e56f44;
+}
 .StripeElement {
   box-sizing: border-box;
   height: 40px;
