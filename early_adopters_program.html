@@ -58,66 +58,62 @@
 					<!-- Section -->
 					<section class="main alt special" id="first">
 						<header>
-							<h2>Join Us</h2>
+							<h2>Friend of penny? Join Us</h2>
 							<p>Join our special introductory program. Help us and let us help you.</p>
-						</header>
-						<div class="inner narrow">
-							<div id="friends_button" class="button is-info">	
-      									Friend of penny?	
-    									</div>	
-
-     									<div class="modal">	
-     									 <div class="modal-background"></div>	
-     									 <div class="modal-card etsy-shopify-modal">	
-     									   
-     									   <header class="modal-card-head">	
-     									     <div class="import-head-section">	
-     									       <p class="modal-card-title">Register with Penny using promotional code</p>	
-     									       <p class="import-modal-paragraph">	
-     									         Your registration will be completed automatically. You can later change your info at edit profile page. Please enter your real email below.
-     									         </br>	
-        								       </p>	
-        								     </div>	
-        								   </header>	
-        								   
-        								   <section class="modal-card-body">	
-        								        <div class="wrapper">	
-        								     		<form action="https://persistentpenny-desireco.c9users.io/friends_of_penny_promotion" method="post" id="payment-form">	
-        								     		  <div class="form-row">	
-        								     		    <label for="card-element" class="stripe-label">	
-        								     		      Credit or debit card	
-        								     		    </label>	
-        								     		    <div id="card-element">	
-        								     		    </div>	
-        								     		  </div>	
-        								     		  <div class="form-row">	
-        								     		    <label class="stripe-label">	
-        								     		      Email	
-        								     		    </label>	
-        								     		    <input id="stripe-email" type = "email" name="email" class="stripe-input-email">	
-        								     		  </div>	
-        								     		  <div class="form-row">	
-        								     		    <label class="stripe-label">	
-        								     		      Coupon:	
-        								     		    </label>	
-        								     		    <input id="stripe-coupon" name="coupon" class="stripe-input-coupon">	
-        								     		    <div id="card-errors" role="alert">	
-        								     		    </div>	
-        								     		  </div>	
-        								     		  <div class="form-row">	
-        								     		    <button id="stripe-button">	
-        								     		      Submit Payment	
-        								     		    </button>	
-        								     		  </div>	
-        								     		</form>	
-        								   		</div>	
-    									   </section>	
-    									   
-    									   <footer class="modal-card-foot">	
-    									     <div id="cancel_button" class="button">Cancel</div>	
-    									   </footer>	
-    									  </div>	
-    									</div>
+            </header>
+						
+            <div class="inner narrow">
+<!--
+            <form action="#" method="post">
+              <div class="field half">
+                <input name="name" id="name" placeholder="Name" type="text" />
+              </div>
+              <div class="field half">
+                <input name="email" id="email" placeholder="Email" type="email"/>
+              </div>
+              <div class="field">
+                <textarea name="message" id="message" rows="6" placeholder="Message"></textarea>
+              </div>
+                <ul class="actions">
+                  <li><button class="button next" type="submit">Sign Up</button></li>
+                </ul>
+            </form>
+--> 
+        							<form action="https://persistentpenny-desireco.c9users.io/friends_of_penny_promotion" method="post" id="payment-form">	
+        							  <div class="field">	
+        							    <label for="card-element" class="stripe-label">	
+        							      Credit or debit card	
+        							    </label>	
+        							    <div id="card-element">	
+        							    </div>
+                            	<div id="card-errors" role="alert"> 
+                            </div>
+        							  </div>	
+        							  <div class="field half">	
+        							    <label>	
+        							      Email	
+        							    </label>	
+        							    <input id="stripe-email" type = "email" name="email" class="stripe-input-email">	
+        							  </div>	
+        							  <div class="field half">	
+        							    <label>	
+        							      Coupon:	
+        							    </label>	
+        							    <input id="stripe-coupon" type="text" name="coupon" class="stripe-input-coupon">	
+        							   </div>
+                          <div class="field">
+                            <textarea name="message" id="message" rows="6" placeholder=" Message"></textarea>
+                          </div>
+                          <ul class="actions">
+                            <li>	
+        							       <button id="stripe-button">	
+        							         Submit Payment and information	
+        							       </button>	
+                            </li>
+                          </ul>
+        							</form>	
+        								 
+    									  
 						</div>
 					</section>
 				<!-- Footer -->
@@ -150,12 +146,6 @@
 
 <script>
 
-$(document).off('click', '#friends_button').on('click', '#friends_button', function()
-    { $(".modal").show(); }
-);
-$(document).off('click', '#cancel_button').on('click', '#cancel_button', function()        	
-        { $(".modal").hide();  }	
-);	
 // Create a Stripe client.	
 var stripe = Stripe("pk_test_4rjFkH2FWmaOE536RqtpikRo");	
 // Create an instance of Elements.	
