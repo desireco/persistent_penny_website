@@ -75,7 +75,7 @@
             </header>
 						
             <div class="inner narrow">
-            <form action="#" method="post">
+            <form action="https://app.persistentpenny.com/friends_of_penny_promotion" method="post" id="payment-form">	
 							<div class="field">
 									<strong>How can we reach you?</strong>
 							</div>
@@ -131,8 +131,12 @@
 							<div class="field">
                 <textarea name="message" id="message" rows="3" placeholder="Anything else we missed to ask?"></textarea>
               </div>
+                <div id="card-element">	
+                </div>
                 <ul class="actions">
-                  <li><button class="button next" type="submit">Join</button></li>
+                  <li>
+                   <button id="stripe-button">	Submit Payment and information	</button>
+                 </li>
                 </ul>
             </form>
         							<!-- <form action="https://persistentpenny-desireco.c9users.io/friends_of_penny_promotion" method="post" id="payment-form">	
