@@ -1,0 +1,250 @@
+<!DOCTYPE HTML>
+<!--
+  Relativity by Pixelarity
+  pixelarity.com | hello@pixelarity.com
+  License: pixelarity.com/license
+-->
+<html>
+  <head>
+    <title>Early Adopters Program</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/friends_of_penny.css" />
+  </head>
+  <body>
+
+
+    <!-- Wrapper -->
+      <div id="wrapper">
+
+        <!-- Header -->
+          <header id="header">
+
+            <!-- Logo -->
+            <div class="logo">
+              <a href="index.html"><strong>Persistent Penny</strong> <span class="hideOnMobile">Persistent Marketing For Your Brand</span></a>
+            </div>
+
+            <!-- Nav -->
+            <nav id="nav">
+              <ul>
+                <li class="current"><a href="http://app.persistentpenny.com/users/sign_up">Sign Up</a></li>
+              
+                <li class="current"><a href="http://app.persistentpenny.com/users/sign_in">Login</a></li>
+              </ul>
+            </nav>
+
+          </header>
+
+        <!-- Section -->
+          <section class="main alt">
+            <header>
+              <h1>Early Adopters Program</h1>
+              <h2>Welcome</h2>
+              <p>Hey, nice to see you here. Welcome to Early Adopters Program. Since you are here, we must have invited you. </p>
+            </header>
+            <div class="inner style2">
+              <div class="image main" data-position="center"><img src="images/sparkler.jpg" alt="" /></div>
+              <h3>What Is Early Adopters Program?</h3>
+              <p>This program is invite only and meant for online businesses. <br>
+              Penny is getting better every day, but we want to make sure this service is perfect for your needs.<br>
+              <strong>For one time payment of $50, we will give you 6 months of service, supportive community and coach you if you need to become succesful.</strong><br>
+              <strong>We in turn will expect you share with us how you use and how you would like to use our service, so we can make it better and more valuable for you and others.</strong>
+              Program lasts 6 months. After program ends, you will get a coupon for discounted use of our ’Business Plan’.<br>
+              During the program we will work with you to make service better for your needs but also to help you present your business best. <br>
+              We will have concierge service that will work with you to help you with strategy or craft useful posts.<br>
+              <p>We reserve the right to terminate service and remove anyone who:
+                <ul>
+                  <li>is disruptive to program in any way</li>
+                  <li>abuses 3rd party services we work with</li>
+                  <li>or abuses our service</li>
+                  <li>if you are breaking ToS on any of the services used by Penny</li>
+                </ul>
+              </p>  
+            </div>
+          </section>
+          
+          <!-- Section -->
+          <section class="main alt" id="first">
+            <header>
+              <h2>Become a Friend of Penny</h2>
+              <p>Join our special introductory program. Help us and let us help you.</p>
+              <p>Form might be a little longer, help us out getting to know you better. <br>
+                <i>We need your email to sign you to community group.</i></p>
+            </header>
+            
+            <div class="inner style2">
+            <!-- 
+            <form action="https://app.persistentpenny.com/friends_of_penny_promotion" method="post" id="payment-form">
+            -->
+
+            <form action="https://persistent-penny-pr-157.herokuapp.com/friends_of_penny_promotion" method="post" id="payment-form">
+            
+              <input type="hidden" id="coupon" name="coupon" value="GiveMeSixMonths" />  
+              <div class="field">
+                  <strong>How can we reach you?</strong>
+              </div>
+              <div class="field half">
+                <input name="name" id="name" placeholder="Name" type="text" />
+              </div>
+              <div class="field half">
+                <input name="email" id="email" placeholder="Email" type="email"/>
+              </div>
+              <div class="field half">
+                  <input name="phone" id="phone" placeholder="Phone" type="text"/>
+              </div>
+              <div class="field half">
+                  <input name="twitter" id="twitter" placeholder="Twitter" type="text"/>
+              </div>
+
+              <div class="field">
+                  <strong>Tell us about your business</strong>
+              </div>
+              <div class="field">
+                  <textarea name="about_business" id="about_business" rows="6" placeholder="What do you do?"></textarea>
+              </div>
+
+              <div class="field">
+                  <strong>What social networks you are using today and how?</strong>
+              </div>
+              <div class="field">
+                  <textarea name="about_social_networks" id="about_social_networks" rows="2" placeholder="What social networks you are using today and how?"></textarea>
+              </div>
+
+              <div class="field">
+                  <strong>What do you expect this will do for you?</strong>
+              </div>
+              <div class="field">
+                  <textarea name="what_expect" id="what_expect" rows="4" placeholder="What do you expect this will do for you?"></textarea>
+              </div>
+
+              <div class="field">
+                  <strong>What is your major/most important business challenge at this moment?</strong>
+              </div>
+              <div class="field">
+                  <textarea name="business_chelenge" id="business_chelenge" rows="4" placeholder="What is your major/most important business challenge at this moment?"></textarea>
+              </div>
+
+              <div class="field">
+                  <strong>Will you need our help to setup your program from us?</strong>
+              </div>
+              <div class="field">
+                  <textarea name="our_help" id="our_help" rows="2" placeholder="Will you need our help to setup your program from us?"></textarea>
+              </div>
+              
+              
+              <div class="field">
+                <textarea name="anything_else" id="anything_else" rows="3" placeholder="Anything else we missed to ask?"></textarea>
+              </div>
+
+
+              <div class="field">
+                <label for="card-element" class="stripe-label"> 
+                  Credit or debit card  
+                </label>  
+                <div id="card-element"> </div>
+                <div id="card-errors" role="alert"> </div>
+              </div>
+                <ul class="actions">
+                  <li>
+                   <button id="stripe-button">  Submit Payment and information  </button>
+                 </li>
+                </ul>
+            </form>
+                        
+            </div>
+          </section>
+        <!-- Footer -->
+          <footer id="footer">
+            <ul class="icons">
+              <li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+              <li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+              <li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
+              <li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+              <li><a href="#" class="icon alt fa-phone"><span class="label">Phone</span></a></li>
+              <li><a href="#" class="icon alt fa-envelope-o"><span class="label">Email</span></a></li>
+            </ul>
+            <p class="copyright">&copy; Untitled. All rights reserved.</p>
+          </footer>
+
+      </div>
+
+    <!-- Scripts -->
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/jquery.dropotron.min.js"></script>
+      <script src="assets/js/jquery.scrollex.min.js"></script>
+      <script src="assets/js/jquery.scrolly.min.js"></script>
+      <script src="assets/js/skel.min.js"></script>
+      <script src="assets/js/util.js"></script>
+      <script src="assets/js/main.js"></script>
+      <script src="https://js.stripe.com/v3/"></script>
+
+  </body>
+</html>
+
+<script>
+
+// Create a Stripe client.  
+var stripe = Stripe("pk_test_4rjFkH2FWmaOE536RqtpikRo");  
+// Create an instance of Elements.  
+var elements = stripe.elements(); 
+ // Custom styling can be passed to options when creating an Element. 
+// (Note that this demo uses a wider set of styles than the guide below.) 
+var style = { 
+  base: { 
+    color: '#32325d', 
+    fontFamily: '"Helvetica Neue", Helvetica, sans-serif',  
+    fontSmoothing: 'antialiased', 
+    fontSize: '16px', 
+    '::placeholder': {  
+      color: '#aab7c4'  
+    } 
+  },  
+  invalid: {  
+    color: '#fa755a', 
+    iconColor: '#fa755a'  
+  } 
+};  
+ // Create an instance of the card Element. 
+var card = elements.create('card', {style: style}); 
+ // Add an instance of the card Element into the `card-element` <div>.  
+card.mount('#card-element');  
+ // Handle real-time validation errors from the card Element. 
+card.addEventListener('change', function(event) { 
+  var displayError = document.getElementById('card-errors');  
+  if (event.error) {  
+    displayError.textContent = event.error.message; 
+  } else {  
+    displayError.textContent = '';  
+  } 
+}); 
+ // Handle form submission. 
+var form = document.getElementById('payment-form'); 
+form.addEventListener('submit', function(event) { 
+  event.preventDefault(); 
+   stripe.createToken(card).then(function(result) { 
+    if (result.error) { 
+      // Inform the user if there was an error. 
+      var errorElement = document.getElementById('card-errors');  
+      errorElement.textContent = result.error.message;  
+    } else {  
+      // Send the token to your server. 
+      stripeTokenHandler(result.token); 
+    } 
+  }); 
+}); 
+ // Submit the form with the token ID.  
+function stripeTokenHandler(token) {  
+  // Insert the token ID into the form so it gets submitted to the server 
+  var form = document.getElementById('payment-form'); 
+  var hiddenInput = document.createElement('input');  
+  hiddenInput.setAttribute('type', 'hidden'); 
+  hiddenInput.setAttribute('name', 'stripeToken');  
+  hiddenInput.setAttribute('value', token.id);  
+  form.appendChild(hiddenInput);
+  // Submit the form
+  form.submit();
+}
+
+</script>
